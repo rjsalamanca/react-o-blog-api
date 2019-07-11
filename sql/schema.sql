@@ -12,6 +12,6 @@ create table posts
 (
     id serial primary key,
     title varchar(200),
-    content text,
-    author_id integer references authors(id)
+    author_id integer references authors(id),
+    content text
 );
